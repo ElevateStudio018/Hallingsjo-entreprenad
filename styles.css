@@ -74,49 +74,54 @@ p { margin: 0 0 1em; }
   color: var(--brand);
 }
 
-/* ---------- Round arrow, links, pills ---------- */
+/* ---------- Arrow, links, buttons ---------- */
 
 .arrow {
   flex: none;
   display: inline-block;
-  width: 26px; height: 26px;
-  border-radius: 50%;
-  background: var(--accent);
   position: relative;
+  width: 34px; height: 12px;
   transition: transform .2s;
 }
 .arrow::before {
   content: "";
-  position: absolute; inset: 0;
-  background: var(--ink);
-  clip-path: polygon(30% 46%, 56% 46%, 49% 37%, 54% 33%, 70% 50%, 54% 67%, 49% 63%, 56% 54%, 30% 54%);
+  position: absolute; left: 0; right: 1px; top: 50%;
+  height: 1.5px; margin-top: -.75px;
+  background: currentColor;
+}
+.arrow::after {
+  content: "";
+  position: absolute; right: 1px; top: 50%;
+  width: 8px; height: 8px; margin-top: -4px;
+  border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
 }
 
 .link-arrow {
-  display: inline-flex; align-items: center; gap: 12px;
-  font-size: 16px; font-weight: 500;
-  color: var(--brand);
+  display: inline-flex; align-items: center; gap: 16px;
+  font-size: 16px; font-weight: 600;
+  color: var(--text);
   text-decoration: none;
 }
-a:hover .arrow { transform: translateX(3px); }
+a:hover .arrow { transform: translateX(6px); }
 .link-arrow--light { color: #fff; }
 
-.pill {
+.btn {
   display: inline-flex; align-items: center; justify-content: center;
-  min-height: 42px;
-  padding: 0 22px;
-  border-radius: 999px;
-  font: inherit; font-size: 15px; font-weight: 500;
+  min-height: 48px;
+  padding: 0 28px;
+  border-radius: 0;
+  font: inherit; font-size: 15px; font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: background-color .2s, color .2s, border-color .2s;
 }
-.pill--outline { border: 1.5px solid var(--brand); color: var(--brand); background: transparent; }
-.pill--outline:hover { background: var(--brand); color: #fff; }
-.pill--outline-light { border: 1.5px solid rgba(255, 255, 255, .7); color: #fff; background: transparent; }
-.pill--outline-light:hover { background: #fff; color: var(--ink); }
-.pill--solid { border: 0; background: var(--brand); color: #fff; min-height: 50px; padding: 0 30px; }
-.pill--solid:hover { background: var(--ink); }
+.btn--outline { border: 1px solid var(--text); color: var(--text); background: transparent; }
+.btn--outline:hover { background: var(--text); color: #fff; }
+.btn--outline-light { border: 1px solid #fff; color: #fff; background: transparent; }
+.btn--outline-light:hover { background: #fff; color: var(--ink); }
+.btn--solid { border: 0; background: var(--brand); color: #fff; min-height: 52px; padding: 0 36px; }
+.btn--solid:hover { background: var(--ink); }
 
 /* ---------- Header ---------- */
 
@@ -133,7 +138,7 @@ a:hover .arrow { transform: translateX(3px); }
 .brand__text span { margin-top: 4px; font-size: 10.5px; font-weight: 500; letter-spacing: 0.36em; text-transform: uppercase; color: var(--muted); }
 
 .nav { display: flex; align-items: center; gap: 30px; }
-.nav > a:not(.pill),
+.nav > a:not(.btn),
 .nav__trigger {
   font: inherit; font-size: 15px; font-weight: 500;
   color: var(--brand);
@@ -141,7 +146,7 @@ a:hover .arrow { transform: translateX(3px); }
   background: none; border: 0; padding: 8px 0;
   cursor: pointer;
 }
-.nav > a:not(.pill):hover,
+.nav > a:not(.btn):hover,
 .nav__trigger:hover { text-decoration: underline; text-underline-offset: 6px; }
 .nav__trigger { display: inline-flex; align-items: center; gap: 8px; }
 .nav__trigger::after {
@@ -187,7 +192,7 @@ a:hover .arrow { transform: translateX(3px); }
 .nav-toggle {
   display: none;
   width: 44px; height: 44px;
-  background: none; border: 1.5px solid var(--brand); border-radius: 50%;
+  background: none; border: 1px solid var(--text);
   cursor: pointer; position: relative;
 }
 .nav-toggle__bars,
@@ -331,15 +336,12 @@ a:hover .arrow { transform: translateX(3px); }
 .article summary {
   cursor: pointer; list-style: none;
   display: inline-flex; align-items: center; gap: 12px;
-  font-size: 15px; font-weight: 500; color: var(--brand);
+  font-size: 15px; font-weight: 600; color: var(--text);
 }
 .article summary::-webkit-details-marker { display: none; }
 .article summary::after {
   content: "+";
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 26px; height: 26px; border-radius: 50%;
-  background: var(--accent); color: var(--ink);
-  font-size: 18px; line-height: 1;
+  font-size: 20px; font-weight: 400; line-height: 1;
 }
 .article details[open] summary::after { content: "–"; }
 .article details p { margin: 14px 0 0; font-size: 15px; }
@@ -423,8 +425,8 @@ a:hover .arrow { transform: translateX(3px); }
 .footer__brand p { max-width: 22em; margin-bottom: 24px; }
 .footer h4 { margin-bottom: 16px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #fff; }
 .footer li { margin-bottom: 8px; }
-.footer a:not(.pill) { text-decoration: none; }
-.footer a:not(.pill):hover { color: #fff; text-decoration: underline; }
+.footer a:not(.btn) { text-decoration: none; }
+.footer a:not(.btn):hover { color: #fff; text-decoration: underline; }
 .footer__base {
   display: flex; justify-content: space-between; gap: 16px;
   padding-top: 20px; padding-bottom: 28px;
@@ -457,10 +459,10 @@ a:hover .arrow { transform: translateX(3px); }
     display: none;
   }
   .nav.is-open { display: flex; }
-  .nav > a:not(.pill),
+  .nav > a:not(.btn),
   .nav__trigger { width: 100%; justify-content: space-between; padding: 14px 0; font-size: 22px; }
   .nav > .nav__phone { display: block; }
-  .nav__cta { margin-top: 20px; align-self: flex-start; }
+  .nav__cta { margin-top: 20px; align-self: stretch; }
   .mega { position: static; box-shadow: none; border: 0; display: none; }
   .mega.is-open { display: block; }
   .mega__inner { grid-template-columns: 1fr; gap: 20px; padding: 4px 0 12px; }
