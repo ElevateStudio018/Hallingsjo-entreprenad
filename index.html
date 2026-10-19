@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="bilder/hero-gravmaskin.jpg">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -35,7 +36,10 @@
 <div class="topbar">
   <div class="wrap topbar__inner">
     <span>Mark- och gräventreprenad i Sätila och Marks kommun</span>
-    <a href="tel:+46725738561">072-573 85 61</a>
+    <span class="topbar__links">
+      <a href="#kontakt">Hitta hit</a>
+      <a href="tel:+46725738561">072-573 85 61</a>
+    </span>
   </div>
 </div>
 
@@ -43,7 +47,7 @@
   <div class="wrap header__inner">
     <a class="brand" href="#top" aria-label="Hällingsjö Entreprenad, till startsidan">
       <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
-        <rect x="0" y="0" width="40" height="40" fill="currentColor"/>
+        <rect width="40" height="40" fill="#14201b"/>
         <rect x="7" y="9" width="26" height="4" fill="#f2b705"/>
         <rect x="7" y="18" width="26" height="4" fill="#f4f2ee"/>
         <rect x="7" y="27" width="26" height="4" fill="#f4f2ee" opacity=".55"/>
@@ -60,12 +64,12 @@
     </button>
 
     <nav class="nav" id="nav" aria-label="Huvudmeny">
-      <a href="#verksamhet">Verksamhet</a>
+      <a href="#tjanster">Tjänster</a>
+      <a href="#foretag">För företag</a>
       <a href="#arbetssatt">Arbetssätt</a>
-      <a href="#om">Om företaget</a>
-      <a href="#referenser">Referenser</a>
+      <a href="#om">Om oss</a>
       <a href="#kontakt">Kontakt</a>
-      <a class="btn btn--accent nav__cta" href="#offert">Begär offert</a>
+      <a class="btn btn--dark nav__cta" href="#offert">Begär offert</a>
     </nav>
   </div>
 </header>
@@ -73,18 +77,116 @@
 <main id="main">
 
   <section class="hero">
-    <div class="wrap hero__grid">
-      <div class="hero__copy">
-        <p class="eyebrow eyebrow--light">Markentreprenör · Gräventreprenör</p>
-        <h1>Markarbete med fokus på kvalitet och&nbsp;noggrannhet</h1>
-        <p class="hero__lead">Hällingsjö Entreprenad hjälper dig med mark- och anläggningsarbeten i samband med byggprojekt, trädgårdar och utemiljöer – från schaktning till färdig yta.</p>
-        <div class="hero__actions">
-          <a class="btn btn--accent" href="#offert">Begär en offert</a>
-          <a class="btn btn--ghost" href="tel:+46725738561">Ring 072-573 85 61</a>
-        </div>
+    <img class="hero__img" src="bilder/hero-gravmaskin.jpg" alt="Grävmaskin på en grushög framför granskog" width="2200" height="1467">
+    <div class="wrap hero__content">
+      <h1>Markarbete med fokus på kvalitet och noggrannhet</h1>
+      <p class="hero__lead">Vi utför mark- och anläggningsarbeten i samband med byggprojekt, trädgårdar och utemiljöer i Sätila och Marks kommun.</p>
+      <div class="hero__actions">
+        <a class="btn btn--accent" href="#offert">Begär en offert</a>
+        <a class="btn btn--light" href="#tjanster">Se våra tjänster</a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="quicklinks" aria-label="Genvägar">
+    <div class="wrap quicklinks__grid">
+      <a href="#tjanst-gravning"><span>Grävning och markarbeten</span></a>
+      <a href="#dranering"><span>Dränering av husgrund</span></a>
+      <a href="#tjanst-stensattning"><span>Stensättning och murar</span></a>
+      <a href="#foretag"><span>Maskinuppdrag för företag</span></a>
+    </div>
+  </nav>
+
+  <section class="intro">
+    <div class="wrap intro__grid">
+      <h2>Mark- och anläggningsarbeten från schakt till färdig yta</h2>
+      <div class="intro__text">
+        <p>Hällingsjö Entreprenad är ett gräv- och markföretag med bas i Sätila. Vi tar uppdrag åt privatpersoner som ska bygga, dränera eller anlägga tomten, och åt byggföretag som behöver en maskin och en erfaren grävmaskinist under en period.</p>
+        <ul class="intro__facts">
+          <li>Godkänd för F-skatt</li>
+          <li>Momsregistrerad</li>
+          <li>Verksamt sedan 2018</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight" id="tjanster">
+    <div class="wrap">
+      <header class="section__head">
+        <h2>Våra tjänster</h2>
+        <a class="link-arrow" href="#offert">Begär offert</a>
+      </header>
+
+      <div class="cards">
+        <article class="card" id="tjanst-gravning">
+          <img src="bilder/gravning.jpg" alt="Grävmaskin schaktar på en byggarbetsplats" loading="lazy" width="1000" height="665">
+          <div class="card__body">
+            <h3>Grävning och markarbeten</h3>
+            <p>Schaktning, planering och förberedelse av mark inför husbygge, tillbyggnad, garage och andra anläggningsprojekt.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="bilder/dranering.jpg" alt="Grävmaskin i uppgrävd jord intill bostadshus" loading="lazy" width="1000" height="1250">
+          <div class="card__body">
+            <h3>Dränering</h3>
+            <p>Dränering runt husgrund och på tomtmark, så att vatten leds bort och grund och källare skyddas mot fukt.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="bilder/avlopp.jpg" alt="Avloppsrör i plast staplade på en arbetsplats" loading="lazy" width="1000" height="667">
+          <div class="card__body">
+            <h3>Avlopp</h3>
+            <p>Markarbeten för avloppslösningar – schakt, ledningsdragning och återfyllning.</p>
+          </div>
+        </article>
+        <article class="card" id="tjanst-stensattning">
+          <img src="bilder/stensattning.jpg" alt="Anläggare lägger marksten på en uppfart" loading="lazy" width="1000" height="667">
+          <div class="card__body">
+            <h3>Stensättning</h3>
+            <p>Stenläggning av uppfarter, gångar och uteplatser, med ett ordentligt bärlager under.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="bilder/murar.jpg" alt="Kallmurad mur av skiffersten" loading="lazy" width="1000" height="667">
+          <div class="card__body">
+            <h3>Murar</h3>
+            <p>Stödmurar och murar i sten eller block för slänter, terrasser och nivåskillnader på tomten.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="bilder/tradgard.jpg" alt="Gång av betongplattor och grus mellan planteringar" loading="lazy" width="1000" height="667">
+          <div class="card__body">
+            <h3>Trädgård och utemiljö</h3>
+            <p>Markarbeten i trädgårdar – nivåer, gångar, ytor och grund för planteringar.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="foretag">
+    <div class="feature__media">
+      <img src="bilder/maskinuppdrag.jpg" alt="Grävmaskin i snötäckt skogsmiljö" loading="lazy" width="1800" height="1201">
+    </div>
+    <div class="feature__body">
+      <p class="kicker">För byggföretag och entreprenörer</p>
+      <h2>Grävmaskins- och anläggningsuppdrag</h2>
+      <p>Behöver ni förstärkning i ett projekt? Vi tar kortare uppdrag som grävmaskinist eller anläggare och kliver in där det behövs – med eller utan egen maskin, enligt överenskommelse.</p>
+      <a class="btn btn--accent" href="tel:+46725738561">Ring 072-573 85 61</a>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="dranering">
+    <div class="wrap drain">
+      <div class="drain__text">
+        <p class="kicker kicker--light">Fokus: dränering</p>
+        <h2>Det viktiga ligger under ytan</h2>
+        <p>En fungerande dränering leder bort vatten från husgrunden innan det hinner orsaka fukt i källare och bjälklag. Arbetet avgörs av detaljerna: rätt fall på marken, dränerande återfyllning, makadambädd och rör som ligger i rätt nivå.</p>
+        <p>Skissen visar principen. Hur din dränering ska utföras beror på grunden, marken och hur vattnet rör sig på tomten – det går vi igenom innan vi lämnar offert.</p>
       </div>
 
-      <figure class="hero__drawing">
+      <figure class="drain__drawing">
         <svg viewBox="0 0 560 470" role="img" aria-labelledby="sektion-titel">
           <title id="sektion-titel">Principskiss: dränering intill husgrund i genomskärning</title>
           <defs>
@@ -105,35 +207,24 @@
             </pattern>
           </defs>
 
-          <!-- befintlig mark -->
           <path d="M410 150 L560 150 L560 440 L188 440 L188 432 L300 432 L300 384 L262 384 Z" fill="url(#hatch)"/>
-          <!-- matjord -->
           <path d="M152 122 L560 146 L560 172 L152 148 Z" fill="url(#dots)"/>
-          <!-- återfyllning -->
           <path d="M164 149 L404 163 L262 392 L164 392 Z" fill="url(#dots)" opacity=".55"/>
-          <!-- makadambädd -->
           <path d="M164 392 L262 392 L268 384 L300 384 L300 432 L164 432 Z" fill="url(#gravel)"/>
-          <!-- schaktgräns -->
           <path d="M410 150 L262 384 L300 384 L300 432" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5 4" opacity=".7"/>
 
-          <!-- grundmur och sula -->
           <rect x="96" y="20" width="56" height="380" fill="url(#concrete)" stroke="currentColor" stroke-width="1.4"/>
           <rect x="64" y="400" width="124" height="34" fill="url(#concrete)" stroke="currentColor" stroke-width="1.4"/>
-          <!-- dräneringsskiva -->
           <rect x="152" y="138" width="12" height="262" fill="currentColor" opacity=".18" stroke="currentColor" stroke-width="1"/>
 
-          <!-- markyta med fall -->
           <path d="M152 122 L560 146" stroke="#f2b705" stroke-width="2.4" fill="none"/>
-          <!-- fallpil -->
           <path d="M300 104 L380 109" stroke="#f2b705" stroke-width="1.2" fill="none"/>
           <path d="M380 109 l-8 -4 l1 8 z" fill="#f2b705"/>
 
-          <!-- dräneringsrör -->
           <circle cx="232" cy="410" r="15" fill="#14201b" stroke="#f2b705" stroke-width="2.4"/>
           <circle cx="232" cy="410" r="9" fill="none" stroke="#f2b705" stroke-width="1" stroke-dasharray="2 2"/>
 
-          <!-- ledare och etiketter -->
-          <g class="callouts" stroke="currentColor" stroke-width=".8" fill="none" opacity=".85">
+          <g stroke="currentColor" stroke-width=".8" fill="none" opacity=".85">
             <path d="M330 88 L340 113"/>
             <path d="M480 140 L500 92"/>
             <path d="M158 220 L210 196 L238 196"/>
@@ -143,103 +234,41 @@
             <path d="M80 434 L80 455"/>
           </g>
           <g class="labels" fill="currentColor">
-            <text x="300" y="80">FALL FRÅN HUSET</text>
-            <text x="500" y="84" text-anchor="middle">MATJORD</text>
-            <text x="242" y="200">DRÄNERINGSSKIVA</text>
-            <text x="336" y="304">DRÄNERANDE ÅTERFYLLNING</text>
-            <text x="346" y="424">MAKADAM 16–32</text>
-            <text x="346" y="456" class="labels__accent">DRÄNERINGSRÖR Ø110</text>
-            <text x="500" y="250" text-anchor="middle">BEFINTLIG MARK</text>
-            <text x="86" y="466">GRUNDSULA</text>
+            <text x="300" y="80">Fall från huset</text>
+            <text x="500" y="84" text-anchor="middle">Matjord</text>
+            <text x="242" y="200">Dräneringsskiva</text>
+            <text x="336" y="304">Dränerande återfyllning</text>
+            <text x="346" y="424">Makadam 16–32</text>
+            <text x="346" y="456" class="labels__accent">Dräneringsrör Ø110</text>
+            <text x="500" y="250" text-anchor="middle">Befintlig mark</text>
+            <text x="86" y="466">Grundsula</text>
           </g>
         </svg>
-        <figcaption>Principskiss · Dränering intill husgrund</figcaption>
+        <figcaption>Principskiss, dränering intill husgrund</figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="facts" aria-label="Företagsuppgifter i korthet">
-    <div class="wrap facts__grid">
-      <div class="fact"><span class="fact__label">Branschkod</span><span class="fact__value">SNI 43120 · Mark- och grundarbeten</span></div>
-      <div class="fact"><span class="fact__label">Skatt</span><span class="fact__value">Godkänd för F-skatt</span></div>
-      <div class="fact"><span class="fact__label">Registrerat</span><span class="fact__value">Verksamt sedan 2018</span></div>
-      <div class="fact"><span class="fact__label">Utgår från</span><span class="fact__value">Sätila, Marks kommun</span></div>
-    </div>
-  </section>
-
-  <section class="section" id="verksamhet">
+  <section class="section" id="arbetssatt">
     <div class="wrap">
-      <div class="section__head">
-        <p class="eyebrow">01 — Verksamhet</p>
-        <h2>Våra tjänster</h2>
-        <p class="section__intro">Mark- och anläggningsarbeten för husbyggen, tomter och utemiljöer. Hör av dig med ditt projekt så berättar vi vad vi kan hjälpa till med.</p>
-      </div>
-
-      <ol class="services">
-        <li class="service">
-          <span class="service__no">01</span>
-          <h3 class="service__title">Grävning och markarbeten</h3>
-          <p class="service__text">Schaktning, planering och förberedelse av mark inför husbygge, tillbyggnad, garage och andra anläggningsprojekt.</p>
-        </li>
-        <li class="service">
-          <span class="service__no">02</span>
-          <h3 class="service__title">Dränering</h3>
-          <p class="service__text">Dränering runt husgrund och på tomtmark, så att vatten leds bort och grund och källare skyddas mot fukt.</p>
-        </li>
-        <li class="service">
-          <span class="service__no">03</span>
-          <h3 class="service__title">Avlopp</h3>
-          <p class="service__text">Markarbeten för avloppslösningar – schakt, ledningsdragning och återfyllning.</p>
-        </li>
-        <li class="service">
-          <span class="service__no">04</span>
-          <h3 class="service__title">Stensättning</h3>
-          <p class="service__text">Stenläggning av uppfarter, gångar och uteplatser, med ett ordentligt bärlager under.</p>
-        </li>
-        <li class="service">
-          <span class="service__no">05</span>
-          <h3 class="service__title">Murar</h3>
-          <p class="service__text">Stödmurar och murar i sten eller block för slänter, terrasser och nivåskillnader på tomten.</p>
-        </li>
-        <li class="service">
-          <span class="service__no">06</span>
-          <h3 class="service__title">Trädgårds- och anläggningsarbeten</h3>
-          <p class="service__text">Markarbeten i trädgårdar och utemiljöer – nivåer, gångar, ytor och grund för planteringar.</p>
-        </li>
-        <li class="service">
-          <span class="service__no">07</span>
-          <h3 class="service__title">Grävmaskins- och anläggningsuppdrag</h3>
-          <p class="service__text">Kortare uppdrag som grävmaskinist eller anläggare, för byggföretag och entreprenörer som behöver förstärkning.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section section--stone" id="arbetssatt">
-    <div class="wrap">
-      <div class="section__head">
-        <p class="eyebrow">02 — Arbetssätt</p>
-        <h2>Från förfrågan till färdigt jobb</h2>
-      </div>
+      <header class="section__head">
+        <h2>Så går ett uppdrag till</h2>
+      </header>
 
       <ol class="steps">
-        <li class="step">
-          <span class="step__no">Steg 1</span>
+        <li>
           <h3>Förfrågan</h3>
           <p>Ring eller skicka en förfrågan med en kort beskrivning av jobbet och var det ska utföras.</p>
         </li>
-        <li class="step">
-          <span class="step__no">Steg 2</span>
+        <li>
           <h3>Genomgång</h3>
           <p>Vi går igenom förutsättningarna, gärna på plats, så att offerten bygger på verkliga förhållanden.</p>
         </li>
-        <li class="step">
-          <span class="step__no">Steg 3</span>
+        <li>
           <h3>Offert</h3>
           <p>Du får en offert utifrån dina behov, med tydligt angivet vad som ingår.</p>
         </li>
-        <li class="step">
-          <span class="step__no">Steg 4</span>
+        <li>
           <h3>Utförande</h3>
           <p>Arbetet utförs enligt överenskommelse och stäms av med dig under tiden.</p>
         </li>
@@ -247,18 +276,17 @@
     </div>
   </section>
 
-  <section class="section" id="om">
+  <section class="section section--stone" id="om">
     <div class="wrap about">
       <div class="about__copy">
-        <p class="eyebrow">03 — Om företaget</p>
         <h2>Din partner för mark och anläggning</h2>
-        <p>Hällingsjö Entreprenad arbetar med mark- och anläggningsarbeten för olika typer av projekt – allt från dränering av en villagrund till maskinarbete åt andra entreprenörer.</p>
+        <p>Hällingsjö Entreprenad arbetar med mark- och anläggningsarbeten för olika typer av projekt – från dränering av en villagrund till maskinarbete åt andra entreprenörer.</p>
         <p>Verksamheten utgår från Sätila i Marks kommun. Kontakta oss för att diskutera ditt projekt och få en offert utifrån dina behov.</p>
         <a class="link-arrow" href="#offert">Diskutera ditt projekt</a>
       </div>
 
       <aside class="ledger" aria-labelledby="bolagsfakta">
-        <h3 id="bolagsfakta" class="ledger__title">Bolagsfakta</h3>
+        <h3 id="bolagsfakta">Bolagsfakta</h3>
         <dl>
           <div><dt>Företagsnamn</dt><dd>Hällingsjö Entreprenad</dd></div>
           <div><dt>Företagsform</dt><dd>Enskild näringsverksamhet</dd></div>
@@ -266,43 +294,17 @@
           <div><dt>F-skatt</dt><dd>Registrerad</dd></div>
           <div><dt>Moms</dt><dd>Registrerad sedan maj 2018</dd></div>
           <div><dt>Bransch</dt><dd>43120 Mark- och grundarbeten</dd></div>
-          <div><dt>Besöksadress</dt><dd>Ryda Dammbäcken 1<br>511 99 Sätila</dd></div>
+          <div><dt>Besöksadress</dt><dd>Ryda Dammbäcken 1, 511 99 Sätila</dd></div>
         </dl>
       </aside>
-    </div>
-  </section>
-
-  <section class="section section--dark" id="referenser">
-    <div class="wrap refs">
-      <div class="refs__copy">
-        <p class="eyebrow eyebrow--light">04 — Referenser</p>
-        <h2>Referensprojekt</h2>
-        <p>Här presenteras ett urval av genomförda grävjobb, dräneringar och stensättningar. Vill du veta mer om tidigare arbeten redan nu – hör av dig, så berättar vi.</p>
-        <a class="btn btn--ghost" href="tel:+46725738561">Ring 072-573 85 61</a>
-      </div>
-      <ul class="refs__types" aria-label="Typer av uppdrag">
-        <li>Grävjobb</li>
-        <li>Dränering</li>
-        <li>Avlopp</li>
-        <li>Stensättning</li>
-        <li>Murar</li>
-        <li>Utemiljö</li>
-      </ul>
-      <!--
-        Projektbilder: lägg verkliga bilder i /bilder och ersätt listan ovan med t.ex.
-        <div class="gallery">
-          <figure><img src="bilder/dranering-satila.jpg" alt="Dränering runt villagrund i Sätila" loading="lazy"><figcaption>Dränering · Sätila</figcaption></figure>
-        </div>
-      -->
     </div>
   </section>
 
   <section class="section" id="kontakt">
     <div class="wrap contact">
       <div class="contact__info">
-        <p class="eyebrow">05 — Kontakt och offert</p>
-        <h2>Berätta om ditt projekt</h2>
-        <p class="section__intro">Snabbast når du oss på telefon. Du kan också skicka en förfrågan via formuläret.</p>
+        <h2>Kontakt och offert</h2>
+        <p class="contact__lead">Snabbast når du oss på telefon. Du kan också skicka en förfrågan via formuläret.</p>
 
         <a class="phone" href="tel:+46725738561">
           <span class="phone__label">Telefon</span>
@@ -384,23 +386,38 @@
     <div class="footer__brand">
       <strong>Hällingsjö Entreprenad</strong>
       <p>Markentreprenör och gräventreprenör i Sätila, Marks kommun.</p>
+      <a class="btn btn--accent" href="#offert">Begär offert</a>
+    </div>
+    <div>
+      <h4>Tjänster</h4>
+      <ul>
+        <li><a href="#tjanster">Grävning och markarbeten</a></li>
+        <li><a href="#dranering">Dränering</a></li>
+        <li><a href="#tjanster">Avlopp</a></li>
+        <li><a href="#tjanster">Stensättning och murar</a></li>
+        <li><a href="#foretag">Maskinuppdrag</a></li>
+      </ul>
     </div>
     <div>
       <h4>Kontakt</h4>
-      <p><a href="tel:+46725738561">072-573 85 61</a><br>Ryda Dammbäcken 1<br>511 99 Sätila</p>
-    </div>
-    <div>
-      <h4>Verksamhet</h4>
-      <p>Grävning · Dränering · Avlopp<br>Stensättning · Murar<br>Trädgård och utemiljö</p>
+      <ul>
+        <li><a href="tel:+46725738561">072-573 85 61</a></li>
+        <li>Ryda Dammbäcken 1</li>
+        <li>511 99 Sätila</li>
+      </ul>
     </div>
     <div>
       <h4>Bolaget</h4>
-      <p>Enskild näringsverksamhet<br>Godkänd för F-skatt<br>Momsregistrerad</p>
+      <ul>
+        <li>Enskild näringsverksamhet</li>
+        <li>Godkänd för F-skatt</li>
+        <li>Momsregistrerad</li>
+      </ul>
     </div>
   </div>
   <div class="wrap footer__base">
     <span>© <span id="year">2026</span> Hällingsjö Entreprenad</span>
-    <a href="#top">Till toppen ↑</a>
+    <span>Bilder: Pexels</span>
   </div>
 </footer>
 
