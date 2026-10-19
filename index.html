@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="bilder/hero-gravmaskin.jpg">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
@@ -33,26 +33,14 @@
 
 <a class="skip" href="#main">Hoppa till innehållet</a>
 
-<div class="topbar">
-  <div class="wrap topbar__inner">
-    <span>Mark- och gräventreprenad i Sätila och Marks kommun</span>
-    <span class="topbar__links">
-      <a href="#om">Om företaget</a>
-      <a href="#bolagsfakta">Bolagsfakta</a>
-      <a href="#kontakt">Hitta hit</a>
-      <a class="topbar__phone" href="tel:+46725738561">072-573 85 61</a>
-    </span>
-  </div>
-</div>
-
 <header class="header" id="top">
   <div class="wrap header__inner">
     <a class="brand" href="#top" aria-label="Hällingsjö Entreprenad, till startsidan">
       <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
         <rect width="40" height="40" fill="#14201b"/>
         <rect x="7" y="9" width="26" height="4" fill="#f2b705"/>
-        <rect x="7" y="18" width="26" height="4" fill="#f4f2ee"/>
-        <rect x="7" y="27" width="26" height="4" fill="#f4f2ee" opacity=".55"/>
+        <rect x="7" y="18" width="26" height="4" fill="#ffffff"/>
+        <rect x="7" y="27" width="26" height="4" fill="#ffffff" opacity=".55"/>
       </svg>
       <span class="brand__text">
         <strong>Hällingsjö</strong>
@@ -91,19 +79,16 @@
             </div>
             <a class="mega__promo" href="#offert">
               <img src="bilder/stensattning.jpg" alt="" loading="lazy" width="1000" height="667">
-              <span class="mega__promo-text">
-                <strong>Begär offert</strong>
-                <span>Beskriv projektet så återkommer vi.</span>
-              </span>
+              <span class="mega__promo-text">Begär offert <i class="arrow" aria-hidden="true"></i></span>
             </a>
           </div>
         </div>
       </div>
-      <a href="#segment">Kunder</a>
+      <a href="#foretag">För företag</a>
       <a href="#kunskap">Kunskap</a>
       <a href="#om">Om oss</a>
-      <a href="#kontakt">Kontakt</a>
-      <a class="btn btn--dark nav__cta" href="#offert">Begär offert</a>
+      <a class="nav__phone" href="tel:+46725738561">072-573 85 61</a>
+      <a class="pill pill--outline nav__cta" href="#kontakt">Kontakt</a>
     </nav>
   </div>
 </header>
@@ -113,138 +98,101 @@
   <section class="hero">
     <img class="hero__img" src="bilder/hero-gravmaskin.jpg" alt="Grävmaskin på en grushög framför granskog" width="2200" height="1467">
     <div class="wrap hero__content">
-      <div class="hero__box">
-        <p class="kicker">Mark och anläggning i Marks kommun</p>
-        <h1>Markarbete med fokus på kvalitet och noggrannhet</h1>
-        <p class="hero__lead">Vi utför mark- och anläggningsarbeten i samband med byggprojekt, trädgårdar och utemiljöer.</p>
-        <div class="hero__actions">
-          <a class="btn btn--accent" href="#offert">Begär en offert</a>
-          <a class="link-arrow" href="#tjanster">Se våra tjänster</a>
-        </div>
+      <h1>Markarbete med fokus på kvalitet och noggrannhet</h1>
+      <div class="hero__foot">
+        <p>Mark- och anläggningsarbeten för byggprojekt, trädgårdar och utemiljöer i Sätila och Marks kommun.</p>
+        <a class="link-arrow link-arrow--light" href="#offert">Begär en offert <i class="arrow" aria-hidden="true"></i></a>
       </div>
     </div>
   </section>
 
-  <section class="figures" aria-label="Hällingsjö Entreprenad i siffror">
-    <div class="wrap figures__grid">
-      <div class="figure">
-        <span class="figure__value">2018</span>
-        <span class="figure__label">Startår för verksamheten</span>
-      </div>
-      <div class="figure">
-        <span class="figure__value">7</span>
-        <span class="figure__label">Tjänsteområden inom mark och anläggning</span>
-      </div>
-      <div class="figure">
-        <span class="figure__value">43120</span>
-        <span class="figure__label">Branschkod: mark- och grundarbeten</span>
-      </div>
-      <div class="figure">
-        <span class="figure__value">F-skatt</span>
-        <span class="figure__label">Godkänd och momsregistrerad</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tight" id="segment">
+  <section class="section">
     <div class="wrap">
-      <header class="section__head">
-        <h2>Vi arbetar för</h2>
-      </header>
-      <div class="segments">
-        <a class="segment" href="#tjanster">
-          <img src="bilder/tradgard.jpg" alt="Gång av plattor och grus mellan planteringar" loading="lazy" width="1000" height="667">
-          <span class="segment__body">
-            <span class="segment__label">Privatpersoner</span>
-            <strong>Husgrund, tomt och trädgård</strong>
-            <span>Dränering, avlopp, stensättning, murar och markarbeten inför bygget.</span>
-          </span>
+      <h2 class="display">Vad kan vi hjälpa till med?</h2>
+      <div class="tiles">
+        <a class="tile" href="#tjanst-gravning">
+          <img src="bilder/gravning.jpg" alt="Grävmaskin schaktar på en byggarbetsplats" width="1000" height="665">
+          <span class="tile__title">Starta ditt markarbete <i class="arrow" aria-hidden="true"></i></span>
         </a>
-        <a class="segment" href="#foretag">
-          <img src="bilder/gravning.jpg" alt="Grävmaskin på en större byggarbetsplats" loading="lazy" width="1000" height="665">
-          <span class="segment__body">
-            <span class="segment__label">Företag och entreprenörer</span>
-            <strong>Maskin och personal på uppdrag</strong>
-            <span>Grävmaskinist eller anläggare under kortare perioder i era projekt.</span>
-          </span>
+        <a class="tile" href="#dranering">
+          <img src="bilder/dranering.jpg" alt="Grävmaskin i uppgrävd jord intill bostadshus" width="1000" height="1250">
+          <span class="tile__title">Dränera husgrunden <i class="arrow" aria-hidden="true"></i></span>
+        </a>
+        <a class="tile" href="#tjanst-stensattning">
+          <img src="bilder/stensattning.jpg" alt="Anläggare lägger marksten på en uppfart" width="1000" height="667">
+          <span class="tile__title">Lägga sten och murar <i class="arrow" aria-hidden="true"></i></span>
+        </a>
+        <a class="tile" href="#foretag">
+          <img src="bilder/maskinuppdrag.jpg" alt="Grävmaskin i snötäckt skogsmiljö" width="1800" height="1201">
+          <span class="tile__title">Hyr in grävmaskinist <i class="arrow" aria-hidden="true"></i></span>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="section section--tight" id="tjanster">
+  <section class="section section--flush" id="tjanster">
     <div class="wrap">
-      <header class="section__head">
-        <h2>Våra tjänster</h2>
-        <a class="link-arrow" href="#offert">Begär offert</a>
-      </header>
+      <div class="split-head">
+        <h2 class="display">Våra tjänster</h2>
+        <p>Mark- och anläggningsarbeten för husbyggen, tomter och utemiljöer. Hör av dig med ditt projekt så berättar vi vad vi kan hjälpa till med.</p>
+      </div>
 
       <div class="cards">
         <article class="card" id="tjanst-gravning">
           <img src="bilder/gravning.jpg" alt="Grävmaskin schaktar på en byggarbetsplats" loading="lazy" width="1000" height="665">
-          <div class="card__body">
-            <h3>Grävning och markarbeten</h3>
-            <p>Schaktning, planering och förberedelse av mark inför husbygge, tillbyggnad, garage och andra anläggningsprojekt.</p>
-          </div>
+          <h3>Grävning och markarbeten</h3>
+          <p>Schaktning, planering och förberedelse av mark inför husbygge, tillbyggnad, garage och andra anläggningsprojekt.</p>
         </article>
         <article class="card">
           <img src="bilder/dranering.jpg" alt="Grävmaskin i uppgrävd jord intill bostadshus" loading="lazy" width="1000" height="1250">
-          <div class="card__body">
-            <h3>Dränering</h3>
-            <p>Dränering runt husgrund och på tomtmark, så att vatten leds bort och grund och källare skyddas mot fukt.</p>
-          </div>
+          <h3>Dränering</h3>
+          <p>Dränering runt husgrund och på tomtmark, så att vatten leds bort och grund och källare skyddas mot fukt.</p>
         </article>
         <article class="card" id="tjanst-avlopp">
           <img src="bilder/avlopp.jpg" alt="Avloppsrör i plast staplade på en arbetsplats" loading="lazy" width="1000" height="667">
-          <div class="card__body">
-            <h3>Avlopp</h3>
-            <p>Markarbeten för avloppslösningar – schakt, ledningsdragning och återfyllning.</p>
-          </div>
+          <h3>Avlopp</h3>
+          <p>Markarbeten för avloppslösningar – schakt, ledningsdragning och återfyllning.</p>
         </article>
         <article class="card" id="tjanst-stensattning">
           <img src="bilder/stensattning.jpg" alt="Anläggare lägger marksten på en uppfart" loading="lazy" width="1000" height="667">
-          <div class="card__body">
-            <h3>Stensättning</h3>
-            <p>Stenläggning av uppfarter, gångar och uteplatser, med ett ordentligt bärlager under.</p>
-          </div>
+          <h3>Stensättning</h3>
+          <p>Stenläggning av uppfarter, gångar och uteplatser, med ett ordentligt bärlager under.</p>
         </article>
         <article class="card" id="tjanst-murar">
           <img src="bilder/murar.jpg" alt="Kallmurad mur av skiffersten" loading="lazy" width="1000" height="667">
-          <div class="card__body">
-            <h3>Murar</h3>
-            <p>Stödmurar och murar i sten eller block för slänter, terrasser och nivåskillnader på tomten.</p>
-          </div>
+          <h3>Murar</h3>
+          <p>Stödmurar och murar i sten eller block för slänter, terrasser och nivåskillnader på tomten.</p>
         </article>
         <article class="card" id="tjanst-tradgard">
           <img src="bilder/tradgard.jpg" alt="Gång av betongplattor och grus mellan planteringar" loading="lazy" width="1000" height="667">
-          <div class="card__body">
-            <h3>Trädgård och utemiljö</h3>
-            <p>Markarbeten i trädgårdar – nivåer, gångar, ytor och grund för planteringar.</p>
-          </div>
+          <h3>Trädgård och utemiljö</h3>
+          <p>Markarbeten i trädgårdar – nivåer, gångar, ytor och grund för planteringar.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="feature" id="foretag">
-    <div class="feature__media">
-      <img src="bilder/maskinuppdrag.jpg" alt="Grävmaskin i snötäckt skogsmiljö" loading="lazy" width="1800" height="1201">
-    </div>
-    <div class="feature__body">
-      <p class="kicker">För byggföretag och entreprenörer</p>
-      <h2>Grävmaskins- och anläggningsuppdrag</h2>
-      <p>Behöver ni förstärkning i ett projekt? Vi tar kortare uppdrag som grävmaskinist eller anläggare och kliver in där det behövs – med eller utan egen maskin, enligt överenskommelse.</p>
-      <a class="btn btn--accent" href="tel:+46725738561">Ring 072-573 85 61</a>
+  <section class="section">
+    <div class="wrap">
+      <a class="banner" id="foretag" href="tel:+46725738561">
+        <img src="bilder/maskinuppdrag.jpg" alt="Grävmaskin i snötäckt skogsmiljö" loading="lazy" width="1800" height="1201">
+        <span class="banner__title">Grävmaskinist och anläggare på uppdrag</span>
+        <span class="banner__foot">
+          <span>Behöver ditt företag förstärkning i ett projekt? Vi tar kortare uppdrag som grävmaskinist eller anläggare, enligt överenskommelse.</span>
+          <span class="link-arrow link-arrow--light">Ring 072-573 85 61 <i class="arrow" aria-hidden="true"></i></span>
+        </span>
+      </a>
     </div>
   </section>
 
-  <section class="section section--dark" id="dranering">
+  <section class="section section--flush" id="dranering">
     <div class="wrap drain">
       <div class="drain__text">
-        <p class="kicker kicker--light">Fokus: dränering</p>
-        <h2>Det viktiga ligger under ytan</h2>
+        <p class="label">Dränering</p>
+        <h2 class="display">Det viktiga ligger under ytan</h2>
         <p>En fungerande dränering leder bort vatten från husgrunden innan det hinner orsaka fukt i källare och bjälklag. Arbetet avgörs av detaljerna: rätt fall på marken, dränerande återfyllning, makadambädd och rör som ligger i rätt nivå.</p>
         <p>Skissen visar principen. Hur din dränering ska utföras beror på grunden, marken och hur vattnet rör sig på tomten – det går vi igenom innan vi lämnar offert.</p>
+        <a class="link-arrow" href="#offert">Begär offert på dränering <i class="arrow" aria-hidden="true"></i></a>
       </div>
 
       <figure class="drain__drawing">
@@ -252,19 +200,19 @@
           <title id="sektion-titel">Principskiss: dränering intill husgrund i genomskärning</title>
           <defs>
             <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-              <line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1" opacity=".35"/>
+              <line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1" opacity=".3"/>
             </pattern>
             <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse">
-              <circle cx="2" cy="2" r="1" fill="currentColor" opacity=".45"/>
-              <circle cx="6.5" cy="6.5" r=".8" fill="currentColor" opacity=".3"/>
+              <circle cx="2" cy="2" r="1" fill="currentColor" opacity=".4"/>
+              <circle cx="6.5" cy="6.5" r=".8" fill="currentColor" opacity=".25"/>
             </pattern>
             <pattern id="gravel" width="14" height="12" patternUnits="userSpaceOnUse">
-              <circle cx="3" cy="3" r="2.2" fill="none" stroke="currentColor" stroke-width=".9" opacity=".6"/>
-              <circle cx="10" cy="8" r="2.6" fill="none" stroke="currentColor" stroke-width=".9" opacity=".6"/>
-              <circle cx="11" cy="2" r="1.2" fill="none" stroke="currentColor" stroke-width=".8" opacity=".5"/>
+              <circle cx="3" cy="3" r="2.2" fill="none" stroke="currentColor" stroke-width=".9" opacity=".55"/>
+              <circle cx="10" cy="8" r="2.6" fill="none" stroke="currentColor" stroke-width=".9" opacity=".55"/>
+              <circle cx="11" cy="2" r="1.2" fill="none" stroke="currentColor" stroke-width=".8" opacity=".45"/>
             </pattern>
             <pattern id="concrete" width="16" height="16" patternUnits="userSpaceOnUse">
-              <path d="M3 4l2 1-1 2zM11 10l2 .5-1.5 1.5zM8 2l1 1M2 12l1.5.5" stroke="currentColor" fill="none" stroke-width=".8" opacity=".5"/>
+              <path d="M3 4l2 1-1 2zM11 10l2 .5-1.5 1.5zM8 2l1 1M2 12l1.5.5" stroke="currentColor" fill="none" stroke-width=".8" opacity=".45"/>
             </pattern>
           </defs>
 
@@ -272,20 +220,20 @@
           <path d="M152 122 L560 146 L560 172 L152 148 Z" fill="url(#dots)"/>
           <path d="M164 149 L404 163 L262 392 L164 392 Z" fill="url(#dots)" opacity=".55"/>
           <path d="M164 392 L262 392 L268 384 L300 384 L300 432 L164 432 Z" fill="url(#gravel)"/>
-          <path d="M410 150 L262 384 L300 384 L300 432" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5 4" opacity=".7"/>
+          <path d="M410 150 L262 384 L300 384 L300 432" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5 4" opacity=".6"/>
 
           <rect x="96" y="20" width="56" height="380" fill="url(#concrete)" stroke="currentColor" stroke-width="1.4"/>
           <rect x="64" y="400" width="124" height="34" fill="url(#concrete)" stroke="currentColor" stroke-width="1.4"/>
-          <rect x="152" y="138" width="12" height="262" fill="currentColor" opacity=".18" stroke="currentColor" stroke-width="1"/>
+          <rect x="152" y="138" width="12" height="262" fill="currentColor" opacity=".12" stroke="currentColor" stroke-width="1"/>
 
-          <path d="M152 122 L560 146" stroke="#f2b705" stroke-width="2.4" fill="none"/>
-          <path d="M300 104 L380 109" stroke="#f2b705" stroke-width="1.2" fill="none"/>
-          <path d="M380 109 l-8 -4 l1 8 z" fill="#f2b705"/>
+          <path d="M152 122 L560 146" stroke="#d9a300" stroke-width="2.4" fill="none"/>
+          <path d="M300 104 L380 109" stroke="#d9a300" stroke-width="1.2" fill="none"/>
+          <path d="M380 109 l-8 -4 l1 8 z" fill="#d9a300"/>
 
-          <circle cx="232" cy="410" r="15" fill="#14201b" stroke="#f2b705" stroke-width="2.4"/>
-          <circle cx="232" cy="410" r="9" fill="none" stroke="#f2b705" stroke-width="1" stroke-dasharray="2 2"/>
+          <circle cx="232" cy="410" r="15" fill="#fff" stroke="#d9a300" stroke-width="2.4"/>
+          <circle cx="232" cy="410" r="9" fill="none" stroke="#d9a300" stroke-width="1" stroke-dasharray="2 2"/>
 
-          <g stroke="currentColor" stroke-width=".8" fill="none" opacity=".85">
+          <g stroke="currentColor" stroke-width=".8" fill="none" opacity=".8">
             <path d="M330 88 L340 113"/>
             <path d="M480 140 L500 92"/>
             <path d="M158 220 L210 196 L238 196"/>
@@ -300,7 +248,7 @@
             <text x="242" y="200">Dräneringsskiva</text>
             <text x="336" y="304">Dränerande återfyllning</text>
             <text x="346" y="424">Makadam 16–32</text>
-            <text x="346" y="456" class="labels__accent">Dräneringsrör Ø110</text>
+            <text x="346" y="456">Dräneringsrör Ø110</text>
             <text x="500" y="250" text-anchor="middle">Befintlig mark</text>
             <text x="86" y="466">Grundsula</text>
           </g>
@@ -310,18 +258,16 @@
     </div>
   </section>
 
-  <section class="section section--stone" id="kunskap">
+  <section class="section" id="kunskap">
     <div class="wrap">
-      <header class="section__head">
-        <div>
-          <p class="kicker">Kunskap</p>
-          <h2>Bra att veta inför markarbetet</h2>
-        </div>
-      </header>
+      <div class="split-head">
+        <h2 class="display">Vill du veta mer?</h2>
+        <p>Här har vi samlat råd som är bra att känna till innan markarbetet börjar.</p>
+      </div>
 
-      <div class="guides">
-        <article class="guide">
-          <span class="guide__tag">Dränering</span>
+      <div class="articles">
+        <article class="article">
+          <p class="label">Dränering</p>
           <h3>Tecken på att husgrunden behöver ny dränering</h3>
           <p>Fuktfläckar eller mögellukt i källaren, vita saltutfällningar på källarväggen och vatten som tränger in vid kraftigt regn är vanliga signaler.</p>
           <details>
@@ -329,8 +275,8 @@
             <p>En dränering har begränsad livslängd – ofta anges 30–50 år. Rör kan slammas igen eller gå sönder, och äldre hus saknar ibland fungerande dränering helt. Börja med att se över stuprör och markens lutning: vattnet ska ledas bort från huset. Hjälper inte det kan det vara dags att gräva fram grunden och lägga ny dränering med isolering och dräneringsskiva.</p>
           </details>
         </article>
-        <article class="guide">
-          <span class="guide__tag">Stensättning</span>
+        <article class="article">
+          <p class="label">Stensättning</p>
           <h3>Därför avgörs en stenläggning under ytan</h3>
           <p>Sätter sig stenarna eller växer ogräs i fogarna beror det oftast på det som ligger under – inte på stenen.</p>
           <details>
@@ -338,8 +284,8 @@
             <p>Under marksten behövs ett bärande lager av krossmaterial som packas i omgångar, och ett tunt lager sättsand som stenen läggs i. En uppfart som ska bära bil kräver kraftigare underbyggnad än en gång eller uteplats. Ytan ska också ha fall så att vatten rinner av i stället för att bli stående.</p>
           </details>
         </article>
-        <article class="guide">
-          <span class="guide__tag">Avlopp</span>
+        <article class="article">
+          <p class="label">Avlopp</p>
           <h3>Enskilt avlopp – börja med kommunen</h3>
           <p>Ska du anlägga eller göra om ett enskilt avlopp behöver du i regel söka tillstånd eller göra en anmälan hos kommunen innan arbetet startar.</p>
           <details>
@@ -351,43 +297,30 @@
     </div>
   </section>
 
-  <section class="section" id="arbetssatt">
-    <div class="wrap">
-      <header class="section__head">
-        <h2>Så går ett uppdrag till</h2>
-      </header>
-
+  <section class="section section--rule" id="arbetssatt">
+    <div class="wrap explore">
+      <div>
+        <h2 class="title">Så går ett uppdrag till</h2>
+        <p>Från första samtalet till färdig yta.</p>
+      </div>
       <ol class="steps">
-        <li>
-          <h3>Förfrågan</h3>
-          <p>Ring eller skicka en förfrågan med en kort beskrivning av jobbet och var det ska utföras.</p>
-        </li>
-        <li>
-          <h3>Genomgång</h3>
-          <p>Vi går igenom förutsättningarna, gärna på plats, så att offerten bygger på verkliga förhållanden.</p>
-        </li>
-        <li>
-          <h3>Offert</h3>
-          <p>Du får en offert utifrån dina behov, med tydligt angivet vad som ingår.</p>
-        </li>
-        <li>
-          <h3>Utförande</h3>
-          <p>Arbetet utförs enligt överenskommelse och stäms av med dig under tiden.</p>
-        </li>
+        <li><span>01</span><h3>Förfrågan</h3><p>Ring eller skicka en förfrågan med en kort beskrivning av jobbet och var det ska utföras.</p></li>
+        <li><span>02</span><h3>Genomgång</h3><p>Vi går igenom förutsättningarna, gärna på plats, så att offerten bygger på verkliga förhållanden.</p></li>
+        <li><span>03</span><h3>Offert</h3><p>Du får en offert utifrån dina behov, med tydligt angivet vad som ingår.</p></li>
+        <li><span>04</span><h3>Utförande</h3><p>Arbetet utförs enligt överenskommelse och stäms av med dig under tiden.</p></li>
       </ol>
     </div>
   </section>
 
-  <section class="section section--line" id="om">
-    <div class="wrap about">
-      <div class="about__copy">
-        <h2>Din partner för mark och anläggning</h2>
-        <p>Hällingsjö Entreprenad arbetar med mark- och anläggningsarbeten för olika typer av projekt – från dränering av en villagrund till maskinarbete åt andra entreprenörer.</p>
-        <p>Verksamheten utgår från Sätila i Marks kommun. Kontakta oss för att diskutera ditt projekt och få en offert utifrån dina behov.</p>
-        <a class="link-arrow" href="#offert">Diskutera ditt projekt</a>
+  <section class="section section--rule" id="om">
+    <div class="wrap explore">
+      <div>
+        <h2 class="title">Din partner för mark och anläggning</h2>
+        <p>Hällingsjö Entreprenad arbetar med mark- och anläggningsarbeten för olika typer av projekt – från dränering av en villagrund till maskinarbete åt andra entreprenörer. Verksamheten utgår från Sätila i Marks kommun.</p>
+        <a class="link-arrow" href="#offert">Diskutera ditt projekt <i class="arrow" aria-hidden="true"></i></a>
       </div>
 
-      <aside class="ledger" aria-labelledby="bolagsfakta">
+      <div class="ledger" aria-labelledby="bolagsfakta">
         <h3 id="bolagsfakta">Bolagsfakta</h3>
         <dl>
           <div><dt>Företagsnamn</dt><dd>Hällingsjö Entreprenad</dd></div>
@@ -398,30 +331,30 @@
           <div><dt>Bransch</dt><dd>43120 Mark- och grundarbeten</dd></div>
           <div><dt>Besöksadress</dt><dd>Ryda Dammbäcken 1, 511 99 Sätila</dd></div>
         </dl>
-      </aside>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="wrap cta-band__inner">
-      <h2>Har du ett projekt på gång?</h2>
-      <div class="cta-band__actions">
-        <a class="btn btn--dark" href="#offert">Begär offert</a>
-        <a class="cta-band__phone" href="tel:+46725738561">eller ring 072-573 85 61</a>
       </div>
     </div>
   </section>
 
-  <section class="section" id="kontakt">
+  <section class="section">
+    <div class="wrap">
+      <a class="banner banner--short" href="#offert">
+        <img src="bilder/tradgard.jpg" alt="Gång av plattor och grus mellan planteringar" loading="lazy" width="1000" height="667">
+        <span class="banner__title">Har du ett projekt på gång?</span>
+        <span class="banner__foot">
+          <span>Berätta vad som ska göras så återkommer vi med en offert utifrån dina behov.</span>
+          <span class="link-arrow link-arrow--light">Begär offert <i class="arrow" aria-hidden="true"></i></span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section section--flush" id="kontakt">
     <div class="wrap contact">
       <div class="contact__info">
-        <h2>Kontakt och offert</h2>
+        <h2 class="display">Kontakta oss</h2>
         <p class="contact__lead">Snabbast når du oss på telefon. Du kan också skicka en förfrågan via formuläret.</p>
 
-        <a class="phone" href="tel:+46725738561">
-          <span class="phone__label">Telefon</span>
-          <span class="phone__number">072-573 85 61</span>
-        </a>
+        <a class="phone" href="tel:+46725738561">072-573 85 61</a>
 
         <dl class="addresses">
           <div>
@@ -485,7 +418,7 @@
           <textarea id="f-beskrivning" name="beskrivning" rows="5" required placeholder="Vad ska göras, ungefärlig omfattning och önskad tidpunkt."></textarea>
         </div>
 
-        <button class="btn btn--accent btn--block" type="submit">Skicka förfrågan</button>
+        <button class="pill pill--solid" type="submit">Skicka förfrågan</button>
         <p class="form__status" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -498,15 +431,15 @@
     <div class="footer__brand">
       <strong>Hällingsjö Entreprenad</strong>
       <p>Markentreprenör och gräventreprenör i Sätila, Marks kommun.</p>
-      <a class="btn btn--accent" href="#offert">Begär offert</a>
+      <a class="pill pill--outline-light" href="#offert">Begär offert</a>
     </div>
     <div>
       <h4>Tjänster</h4>
       <ul>
-        <li><a href="#tjanster">Grävning och markarbeten</a></li>
+        <li><a href="#tjanst-gravning">Grävning och markarbeten</a></li>
         <li><a href="#dranering">Dränering</a></li>
-        <li><a href="#tjanster">Avlopp</a></li>
-        <li><a href="#tjanster">Stensättning och murar</a></li>
+        <li><a href="#tjanst-avlopp">Avlopp</a></li>
+        <li><a href="#tjanst-stensattning">Stensättning och murar</a></li>
         <li><a href="#foretag">Maskinuppdrag</a></li>
       </ul>
     </div>
