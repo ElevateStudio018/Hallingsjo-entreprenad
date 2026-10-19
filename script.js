@@ -12,10 +12,34 @@ toggle.addEventListener("click", () => {
   nav.classList.toggle("is-open", !open);
 });
 
+const megaTrigger = document.querySelector(".nav__trigger");
+const mega = document.getElementById("mega");
+
+function setMega(open) {
+  megaTrigger.setAttribute("aria-expanded", String(open));
+  mega.classList.toggle("is-open", open);
+}
+
+megaTrigger.addEventListener("click", () => {
+  setMega(megaTrigger.getAttribute("aria-expanded") !== "true");
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".nav__item")) setMega(false);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    setMega(false);
+    megaTrigger.focus();
+  }
+});
+
 nav.addEventListener("click", (e) => {
   if (e.target.closest("a")) {
     toggle.setAttribute("aria-expanded", "false");
     nav.classList.remove("is-open");
+    setMega(false);
   }
 });
 
